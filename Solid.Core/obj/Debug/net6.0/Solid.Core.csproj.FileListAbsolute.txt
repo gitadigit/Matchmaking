@@ -1,0 +1,12 @@
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Core\bin\Debug\net6.0\Solid.Core.deps.json
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Core\bin\Debug\net6.0\Solid.Core.dll
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Core\bin\Debug\net6.0\Solid.Core.pdb
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Core\obj\Debug\net6.0\Solid.Core.csproj.AssemblyReference.cache
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Core\obj\Debug\net6.0\Solid.Core.GeneratedMSBuildEditorConfig.editorconfig
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Core\obj\Debug\net6.0\Solid.Core.AssemblyInfoInputs.cache
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Core\obj\Debug\net6.0\Solid.Core.AssemblyInfo.cs
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Core\obj\Debug\net6.0\Solid.Core.csproj.CoreCompileInputs.cache
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Core\obj\Debug\net6.0\Solid.Core.dll
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Core\obj\Debug\net6.0\refint\Solid.Core.dll
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Core\obj\Debug\net6.0\Solid.Core.pdb
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Core\obj\Debug\net6.0\ref\Solid.Core.dll

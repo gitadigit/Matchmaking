@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> -->
+    <script>
+        <meta charset="UTF-8" />
+        //הוספת אירוע לשדכן 
+        function post() {
+            let firstNameEl = document.createElement("input");
+            let lastNameEl = document.createElement("input");
+            let emailEl = document.createElement("input");
+            let phoneEl = document.createElement("input");
+
+            document.body.appendChild(firstNameEl);
+            document.body.appendChild(lastNameEl);
+            document.body.appendChild(emailEl);
+            document.body.appendChild(phoneEl);
+
+            emailEl.type = 'email'
+            firstNameEl.placeholder = "FIRST NAME"
+            lastNameEl.placeholder = "LAST NAME"
+            phoneEl.placeholder = "PHONE"
+
+            let buttonEl = document.createElement("button")
+            document.body.appendChild(buttonEl)
+            buttonEl.innerText = "POST+"
+            buttonEl.addEventListener("click", function () {
+                axios.post("https://localhost:7280/api/Events", 
+                    {
+                        "FirstName":firstNameEl.value,
+                        "LastName":lastNameEl.value,
+                        "Email":emailEl.value,
+                        "Phone":phoneEl.value
+                    })
+
+                    .then((res) => console.log(res.data))
+                location.reload(), 1000;
+            })
+        }
+
+
+               //מחיקת לשדכן
+            function deletev() {
+            let ulEl = document.createElement("dl")
+            axios.get("https://localhost:7280/api/Events").then((res) => { //https://eventsapi.onrender.com/api/Events
+                res.data.forEach(element => {
+                    var liEl = document.createElement("dd")
+                    console.log(element.title)
+                    liEl.innerHTML = element.title
+                    liEl.onclick = function () {
+                        let liElId = element.id
+                        console.log(liElId)
+                        axios.delete(`https://localhost:7280/api/Events/${liElId}`) //https://eventsapi.onrender.com/api/Events
+                            .then((res) => console.log(res.data))
+                            location.reload(),1000; 
+                    }
+                    ulEl.appendChild(liEl)
+                });
+                document.body.appendChild(ulEl)
+            })
+        }
+
+
+
+
+
+            
+            
+
+
+
+    </script>
+</head>
+
+<body>
+    <button onclick="get()"> Get</button>
+    <button onclick="post()">Post</button>
+    <button onclick="getId()">GetId</button>
+    <button onclick="put()">Put</button>
+    <button onclick="deletev()">Delete</button>
+    <div id='matching'></div>
+
+</body>
+
+</html>

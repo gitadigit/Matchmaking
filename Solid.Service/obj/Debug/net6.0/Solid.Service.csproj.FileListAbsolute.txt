@@ -1,0 +1,15 @@
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Service\bin\Debug\net6.0\Solid.Service.deps.json
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Service\bin\Debug\net6.0\Solid.Service.dll
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Service\bin\Debug\net6.0\Solid.Service.pdb
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Service\bin\Debug\net6.0\Solid.Core.dll
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Service\bin\Debug\net6.0\Solid.Core.pdb
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Service\obj\Debug\net6.0\Solid.Service.csproj.AssemblyReference.cache
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Service\obj\Debug\net6.0\Solid.Service.GeneratedMSBuildEditorConfig.editorconfig
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Service\obj\Debug\net6.0\Solid.Service.AssemblyInfoInputs.cache
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Service\obj\Debug\net6.0\Solid.Service.AssemblyInfo.cs
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Service\obj\Debug\net6.0\Solid.Service.csproj.CoreCompileInputs.cache
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Service\obj\Debug\net6.0\Solid.Service.csproj.CopyComplete
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Service\obj\Debug\net6.0\Solid.Service.dll
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Service\obj\Debug\net6.0\refint\Solid.Service.dll
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Service\obj\Debug\net6.0\Solid.Service.pdb
+Y:\Groups\Group_5\מלכה  עדי\Dotnet\Matches\Solid.Service\obj\Debug\net6.0\ref\Solid.Service.dll
