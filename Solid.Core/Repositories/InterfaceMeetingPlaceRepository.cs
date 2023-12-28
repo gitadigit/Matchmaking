@@ -11,12 +11,12 @@ namespace Solid.Core.Repositories
     {
         List<MeetingPlace> GetMeetingPlaces();
 
-        MeetingPlace GetByIdMeetingPlace(string namePlace);   
+        MeetingPlace GetByIdMeetingPlace(int id);   
 
         MeetingPlace AddMeetingPlace(MeetingPlace meetingPlace);
             
-        MeetingPlace UpdateMeetingPlace(string namePlace, MeetingPlace meetingPlace);
+        MeetingPlace UpdateMeetingPlace(int id, MeetingPlace meetingPlace);
 
-        void DeleteMeetingPlace(string namePlace);
+        void DeleteMeetingPlace(int id);
     }
 }

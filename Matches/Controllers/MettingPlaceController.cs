@@ -1,6 +1,7 @@
 ﻿using Matches.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Solid.Core.Services;
+using Solid.Service;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -25,9 +26,9 @@ namespace Matches.Controllers
 
         // GET api/<MettingPlaceController>/5
         [HttpGet("{id}")]
-        public ActionResult<MeetingPlace> Get(string namePlace)
+        public ActionResult<MeetingPlace> Get(int id)
         {
-            var place = _meetingPlaceServices.GetMeetingPlaceById(namePlace);
+            var place = _meetingPlaceServices.GetMeetingPlaceById(id);
             if (place is null)
                 return NotFound();
             return Ok(place);   
@@ -42,16 +43,16 @@ namespace Matches.Controllers
 
         // PUT api/<MettingPlaceController>/5
         [HttpPut("{id}")]
-        public void Put(string namePlace, [FromBody] MeetingPlace value)
+        public void Put(int id, [FromBody] MeetingPlace value)
         {
-            _meetingPlaceServices.UpdateMeetingPlace(namePlace, value);
+            _meetingPlaceServices.UpdateMeetingPlace(id, value);
         }
 
         // DELETE api/<MettingPlaceController>/5
         [HttpDelete("{id}")]
-        public void Delete(string namePlace)
+        public void Delete(int id)
         {
-             _meetingPlaceServices.DeleteMeetingPlace(namePlace);
+             _meetingPlaceServices.DeleteMeetingPlace(id);
             
         }
     }

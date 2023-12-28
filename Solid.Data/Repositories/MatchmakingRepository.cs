@@ -19,11 +19,11 @@ namespace Solid.Data.Repositories
         }
         public List<Matchmaking> GetEMatchmakings()
         {
-            return _context.matchmaking;
+            return _context.matchmaking.ToList();
         }
         public Matchmaking GetByIdMatchmakings(int id)
         {
-            return _context.matchmaking.Find(m => m.Id == id);
+            return _context.matchmaking.ToList().Find(m => m.Id == id);
         }
 
         public Matchmaking AddMatchmaking(Matchmaking matchmaking)
@@ -33,7 +33,7 @@ namespace Solid.Data.Repositories
         }
         public Matchmaking UpdateMatchmaking(int id, Matchmaking matchmaking)
         {
-            var updateMatchmaking = _context.matchmaking.Find(m => m.Id == id);
+            var updateMatchmaking = _context.matchmaking.ToList().Find(m => m.Id == id);
             if (updateMatchmaking != null)
             {
                 updateMatchmaking.Id = matchmaking.Id;
@@ -50,7 +50,7 @@ namespace Solid.Data.Repositories
 
         public void DeleteMatchmaking(int id)
         {
-            _context.matchmaking.Remove(_context.matchmaking.Find(m => m.Id == id));
+            _context.matchmaking.Remove(_context.matchmaking.ToList().Find(m => m.Id == id));
         }
 
     }

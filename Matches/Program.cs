@@ -25,7 +25,9 @@ builder.Services.AddScoped<InterfaceMatchmakerServices, MatchmakerService>();
 builder.Services.AddScoped<InterfaceMatchmakingServices, MatchmakingService>();
 builder.Services.AddScoped<InterfaceMeetingPlaceServices, MeetingPlaceService>();
 
-builder.Services.AddSingleton<DataContext>();
+//builder.Services.AddSingleton<DataContext>();
+builder.Services.AddDbContext<DataContext>();
+
 
 var app = builder.Build();
 

@@ -22,14 +22,14 @@ namespace Solid.Service
             return _meetingPlaceRepository.AddMeetingPlace(meetingPlace);
         }
 
-        public void DeleteMeetingPlace(string namePlace)
+        public void DeleteMeetingPlace(int kodePlace)
         {
-            _meetingPlaceRepository.DeleteMeetingPlace(namePlace);
+            _meetingPlaceRepository.DeleteMeetingPlace(kodePlace);
         }
 
-        public MeetingPlace GetMeetingPlaceById(string namePlace)
+        public MeetingPlace GetMeetingPlaceById(int kodePlace)
         {
-            return _meetingPlaceRepository.GetByIdMeetingPlace(namePlace);  
+            return _meetingPlaceRepository.GetByIdMeetingPlace(kodePlace);  
         }
 
         public List<MeetingPlace> GetMeetingPlaces()
@@ -37,9 +37,9 @@ namespace Solid.Service
             return _meetingPlaceRepository.GetMeetingPlaces();
         }
 
-        public MeetingPlace UpdateMeetingPlace(string namePlace, MeetingPlace meetingPlace)
+        public MeetingPlace UpdateMeetingPlace(int kodePlace, MeetingPlace meetingPlace)
         {
-          return _meetingPlaceRepository.UpdateMeetingPlace(namePlace, meetingPlace);   
+          return _meetingPlaceRepository.UpdateMeetingPlace(kodePlace, meetingPlace);   
         }
     }
 }

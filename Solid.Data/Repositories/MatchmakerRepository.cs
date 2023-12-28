@@ -19,12 +19,12 @@ namespace Solid.Data.Repositories
 
         public List<Matchmaker> GetMatchmakers()
         {
-            return _context.matchmakers;
+            return _context.matchmakers.ToList();
         }
 
         public Matchmaker GetByIdMatchmaker(int id)
         {
-            return _context.matchmakers.Find(m => m.Id == id);
+            return _context.matchmakers.ToList().Find(m => m.Id == id);
         }
 
         public Matchmaker AddMatchmaker(Matchmaker matchmaker)
@@ -34,7 +34,7 @@ namespace Solid.Data.Repositories
         }
         public Matchmaker UpdateMatchmaker(int id, Matchmaker matchmaker)
         {
-            var updateMatchmaker = _context.matchmakers.Find(m => m.Id == id);  
+            var updateMatchmaker = _context.matchmakers.ToList().Find(m => m.Id == id);  
             if(updateMatchmaker != null)
             {
                 updateMatchmaker.Id = matchmaker.Id;
@@ -48,7 +48,7 @@ namespace Solid.Data.Repositories
 
         public void DeleteMatchmaker(int id)
         {
-            _context.matchmakers.Remove(_context.matchmakers.Find(m => m.Id ==id));
+            _context.matchmakers.Remove(_context.matchmakers.ToList().Find(m => m.Id ==id));
         }
     }
 }

@@ -11,12 +11,12 @@ namespace Solid.Core.Services
     {
         List<MeetingPlace> GetMeetingPlaces();
 
-        MeetingPlace GetMeetingPlaceById(string namePlace);
+        MeetingPlace GetMeetingPlaceById(int id);
 
         MeetingPlace AddMeetingPlace(MeetingPlace meetingPlace);
 
-        MeetingPlace UpdateMeetingPlace(string namePlace, MeetingPlace meetingPlace);
+        MeetingPlace UpdateMeetingPlace(int id, MeetingPlace meetingPlace);
 
-        void DeleteMeetingPlace(string namePlace);
+        void DeleteMeetingPlace(int id);
     }
 }

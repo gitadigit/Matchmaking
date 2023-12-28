@@ -19,21 +19,15 @@ namespace Solid.Data.Repositories
             _context = context;
         }
 
-        List<MeetingPlace> InterfaceMeetingPlaceRepository.GetMeetingPlaces()
+        public List<MeetingPlace> GetMeetingPlaces()
         {
-            throw new NotImplementedException();
-        }
-        List<MeetingPlace> GetMeetingPlaces()
-        {
-           return _context.meetingPlace;
+           return _context.meetingPlace.ToList();
         }
 
 
-  
-
-        public MeetingPlace GetByIdMeetingPlace(string namePlace)
+        public MeetingPlace GetByIdMeetingPlace(int id)
         {
-            return _context.meetingPlace.Find(m => m.NamePlace == namePlace);
+            return _context.meetingPlace.ToList().Find(k => k.Id == id);
         }
 
         public MeetingPlace AddMeetingPlace(MeetingPlace meetingPlace)
@@ -42,11 +36,12 @@ namespace Solid.Data.Repositories
             return meetingPlace;
         }
 
-        public MeetingPlace UpdateMeetingPlace(string namePlace, MeetingPlace meetingPlace)
+        public MeetingPlace UpdateMeetingPlace(int id, MeetingPlace meetingPlace)
         {
-            var updateMeetingPlace = _context.meetingPlace.Find(m => m.NamePlace == namePlace);
+            var updateMeetingPlace = _context.meetingPlace.ToList().Find(k => k.Id == id);
             if (updateMeetingPlace != null)
             {
+                //updateMeetingPlace.KodePlace = kode;
                 updateMeetingPlace.NamePlace = meetingPlace.NamePlace;
                 updateMeetingPlace.Descriptuon = meetingPlace.Descriptuon;
                 updateMeetingPlace.IsActive = meetingPlace.IsActive;
@@ -55,9 +50,9 @@ namespace Solid.Data.Repositories
             return null;
         }
 
-        public void DeleteMeetingPlace(string namePlace)
+        public void DeleteMeetingPlace(int id)
         {
-            _context.meetingPlace.Remove(_context.meetingPlace.Find(m => m.NamePlace == namePlace));
+            _context.meetingPlace.Remove(_context.meetingPlace.ToList().Find(k => k.Id == id));
 
         }
 

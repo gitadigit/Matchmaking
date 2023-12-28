@@ -19,6 +19,7 @@ namespace Matches.Controllers
         }
 
         // GET: api/<MatchController>
+
         [HttpGet]
         public IActionResult Get()
         {
